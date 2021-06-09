@@ -1,0 +1,137 @@
+#wrapper {
+  color: #62e2dc;
+}
+
+#wrapper .back_btn {
+  display: block;
+  margin: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#wrapper .back_btn:link, #wrapper .back_btn:hover, #wrapper .back_btn:visited, #wrapper .back_btn:active {
+  color: #62e2dc;
+  text-decoration: none;
+}
+
+#wrapper .container {
+  width: 80%;
+  max-width: 960px;
+  margin: 3rem auto;
+  padding: 1rem 0;
+  border: 2px solid #62e2dc;
+  border-radius: 10px;
+}
+
+#wrapper .container h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  #wrapper .container h1 {
+    font-size: 1.5rem;
+  }
+}
+
+#wrapper .container .shopping_list {
+  margin: 1rem 0;
+  list-style: none;
+}
+
+#wrapper .container .shopping_list li {
+  width: 96%;
+  margin: auto;
+  padding: 1rem 0;
+  border-top: 2px solid #62e2dc;
+}
+
+#wrapper .container .shopping_list li:last-of-type {
+  border-bottom: 2px solid #62e2dc;
+}
+
+#wrapper .container .shopping_list li h2 {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 480px) {
+  #wrapper .container .shopping_list li h2 {
+    font-size: 1.2rem;
+  }
+}
+
+#wrapper .container .shopping_list li .price {
+  font-size: 1.5rem;
+  text-align: right;
+}
+
+@media screen and (max-width: 480px) {
+  #wrapper .container .shopping_list li .price {
+    font-size: 1.2rem;
+  }
+}
+
+#wrapper .container .shopping_list li .price::before {
+  content: '\00a5';
+  font-size: 1.7rem;
+}
+
+@media screen and (max-width: 480px) {
+  #wrapper .container .shopping_list li .price::before {
+    font-size: 1.5rem;
+  }
+}
+
+#wrapper .container .total {
+  width: 96%;
+  margin: auto;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  #wrapper .container .total {
+    font-size: 1.2rem;
+  }
+}
+
+#wrapper .container .total .yen_symbol {
+  font-size: 1.7rem;
+}
+
+@media screen and (max-width: 480px) {
+  #wrapper .container .total .yen_symbol {
+    font-size: 1.5rem;
+  }
+}
+
+#wrapper .container .confirm_btn {
+  display: block;
+  margin: auto;
+  padding: 4px 1.2rem;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #62e2dc;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 40px;
+}
+
+.confirm_btn:hover {
+  cursor: pointer;
+  opacity:0.8;
+
+}
+
+.done {
+  background: #aaa;
+  color: #888
+}
+
+#wrapper .container .confirm_btn.done{
+  background: #888;
+}
